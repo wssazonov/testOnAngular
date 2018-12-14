@@ -1,0 +1,84 @@
+.sidenav-container {
+  height: 100%;
+}
+
+.sidenav {
+  width: 200px;
+}
+
+.sidenav .mat-toolbar {
+  background: inherit;
+}
+
+.mat-toolbar.mat-primary {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.hidden {
+  display: none;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+.mat-expansion-panel-header {
+  padding: 0 16px!important;
+}
+
+.main-menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border: 1px solid #e5e5e5;
+}
+
+.main-menu > li {
+  position: relative;
+  display: inline-block;
+  margin-right: -4px;
+}
+
+.main-menu a {
+  display: block;
+  margin-left: -1px;
+  padding: 8px 10px;
+  color: #0088cc;
+  border-left: 1px solid #e5e5e5;
+}
+
+.main-menu a:hover {
+  background-color: #f5f5f5;
+}
+
+.main-menu .sub-menu {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background-color: #fcf8e3;
+}
+
+.main-menu .sub-menu a {
+}
+
+mat-toolbar a {
+  display: inline-block;
+  margin: 0 10px;
+  color: #fff;
+  text-decoration: none;
+}
+
+@media (min-width: 723px) {
+  .sidenav, .mat-icon-button {
+    display: none!important;
+  }
+}
+
+@media (max-width: 723px) {
+  mat-toolbar a {
+    display: none;
+  }
+}
