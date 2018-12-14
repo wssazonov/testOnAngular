@@ -35,9 +35,20 @@
         *ngIf="isHandset$ | async">
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
-      <span>my-app</span>
+      <span>ITConsult</span>
       <span class="spacer"></span>
-      <a mat-list-item href="#">Сервисы</a>
+      <ul class="menu">
+          <li><a href=#>Сервисы</a></li>
+          <li><a href=#>Проекты</a>
+            <ul class="submenu">
+                <li><a href=#>Web-проекты</a></li>
+                <li><a href=#>Мобильные приложения</a></li>
+            </ul></li>
+          <li><a href=#>О компании</a></li>
+          <li><a href=#>Команда</a></li>
+          <li><a href=#>Контакты</a></li>
+      </ul>
+      <!-- <a mat-list-item href="#">Сервисы</a>
       <mat-expansion-panel>
         <mat-expansion-panel-header>
           <mat-panel-title>
@@ -51,7 +62,7 @@
       </mat-expansion-panel>
       <a mat-list-item href="#">О компании</a>
       <a mat-list-item href="#">Команда</a>
-      <a mat-list-item href="#">Контакты</a>
+      <a mat-list-item href="#">Контакты</a> -->
     </mat-toolbar>
     <ng-content>
       

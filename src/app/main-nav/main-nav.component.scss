@@ -1,3 +1,7 @@
+
+.mat-toolbar.mat-primary {
+  background: #c0c0c0;
+}
 .sidenav-container {
   height: 100%;
 }
@@ -28,48 +32,61 @@
   padding: 0 16px!important;
 }
 
-.main-menu {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  border: 1px solid #e5e5e5;
-}
-
-.main-menu > li {
-  position: relative;
-  display: inline-block;
-  margin-right: -4px;
-}
-
-.main-menu a {
+ul {
   display: block;
-  margin-left: -1px;
-  padding: 8px 10px;
-  color: #0088cc;
-  border-left: 1px solid #e5e5e5;
-}
-
-.main-menu a:hover {
-  background-color: #f5f5f5;
-}
-
-.main-menu .sub-menu {
-  position: absolute;
   margin: 0;
   padding: 0;
   list-style: none;
-  background-color: #fcf8e3;
 }
-
-.main-menu .sub-menu a {
+ul:after {
+  display: block;
+  content: ' ';
+  clear: both;
+  float: none;
 }
-
-mat-toolbar a {
-  display: inline-block;
-  margin: 0 10px;
-  color: #fff;
+ul.menu > li {
+  float: left;
+  position: relative;
+}
+ul.menu > li > a {
+  display: block;
+  padding: 10px;
+  color: white;
+  background-color: #c0c0c0;
   text-decoration: none;
 }
+ul.menu > li > a:hover {
+  background-color: #808080;
+}
+ul.submenu {
+  display: none;
+  position: absolute;
+  // width: 120px;
+  // top: 55px;
+  left: 0;
+  // background-color: white;
+  // border: 1px solid red;
+}
+ul.submenu > li {
+  display: block;
+}
+ul.submenu > li > a {
+  display: block;
+  padding: 20px;
+  color: white;
+  background-color: #c0c0c0;
+  text-decoration: none;
+}
+ul.submenu > li > a:hover {
+  background-color: #808080;
+  text-decoration: none;
+}
+
+ul.menu > li:hover > ul.submenu {
+  display: block;
+}
+
+
 
 @media (min-width: 723px) {
   .sidenav, .mat-icon-button {
@@ -78,7 +95,7 @@ mat-toolbar a {
 }
 
 @media (max-width: 723px) {
-  mat-toolbar a {
+  mat-toolbar ul {
     display: none;
   }
 }
