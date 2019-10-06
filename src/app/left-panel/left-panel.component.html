@@ -1,0 +1,21 @@
+<div class="leftSide">
+  <div class="header">
+    <div class="sort">
+      Sort:
+      <input type="checkbox"
+             id="sort"
+             defaultChecked={checked}
+             onChange={this.setOrder.bind(this)}/>
+      <label htmlFor="sort"></label>
+    </div>
+    <div class="filterText">
+      <input type="text" ref="filterText" onChange={this.handleTextFilter.bind(this)}/>
+    </div>
+  </div>
+  <div class="side-list">
+    <div class="side-item" *ngFor="let item of leftItems" (click)="onClick(item)">
+      <span>{{item.title}}</span>
+      <span>{{item.notes}}</span>
+    </div>
+  </div>
+</div>

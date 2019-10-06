@@ -1,0 +1,32 @@
+.rightSide {
+  background: #749CD5;
+  width: 100%;
+  padding: 15px;
+  margin: 15px;
+
+  .header {
+    overflow: hidden;
+    margin-bottom: 15px;
+    display: flex;
+
+    .sort {
+      width: 40%;
+      line-height: 18px;
+    }
+  }
+
+  .side-list {
+    max-height: 90vh;
+    overflow: auto;
+  }
+
+  .side-item {
+    padding: 5px 0;
+    background: #CCFF9A;
+    text-align: center;
+    color: #333;
+    cursor: pointer;
+    margin-bottom: 10px;
+    line-height: 18px;
+  }
+}

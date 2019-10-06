@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+
+  item;
+  onAClicked(item) {
+    console.log(item);
+    this.item = item;
+  }
 }

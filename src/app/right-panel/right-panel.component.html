@@ -1,0 +1,23 @@
+<div class="rightSide">
+  <div class="header">
+    Filters:
+    <input type="checkbox" class="labeled"/>
+    <label class="icon" htmlFor="flower"></label>
+
+    <input type="checkbox" class="labeled"/>
+    <label class="icon" htmlFor="heart"></label>
+
+    <input type="checkbox" class="labeled"/>
+    <label class="icon" htmlFor="sun"></label>
+
+    <input type="checkbox" class="labeled"/>
+    <label class="icon" htmlFor="flash"></label>
+
+  </div>
+  <div class="side-list">
+    <div class="side-item" *ngFor="let item of rightItems">
+      <span>{{item.title}}</span>
+      <span>{{item.notes}}</span>
+    </div>
+  </div>
+</div>
